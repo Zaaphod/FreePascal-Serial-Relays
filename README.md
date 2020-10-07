@@ -30,17 +30,17 @@ It can control multiple relay boards at the same time, they are referenced by th
 
 Functions:
 ----------
-Function Serial_Device_Add(Port:String):Boolean;  //Adds a device at the port specified and opens the port
-Function Serial_Relay_Status(Device:String):integer; //Reports the status of all relays on board specified to the console
-Function Serial_Relay_List:integer; //Lists all relay boards added and their status to the cosole
-Function Write_Serial_Relay(Device:String;Relay_Number:Byte;State:Boolean):integer;
-Function Read_Serial_Relay(Device:String;Relay_Number:Byte):Byte;
-Function Set_Serial_Relays(Device:String):integer;  //Turns on All relays on the board specified
-Function Set_All_Serial_Relays:integer; //Turns on All relays on All boards
-Function Clear_Serial_Relays(Device:String):integer; //Turns off All relays on the board specified
-Function Clear_All_Serial_Relays:integer; //Turns on All relays on All boards
-Function Serial_Relay_Device_Status(Device:String):Word; //Reports the status of all relays on the board specified in a single word
-Function Serial_Relay_Device_Status_String(Device:String):String; //Reports the status of all relays on the board specified in a string of 1's and 0's
-Function Serial_Relay_State(Device:String;Relay_Number:Byte):Boolean; //Reports the status of a specific relay on the board specified as a boolean value
+*Function Serial_Device_Add(Port:String):Boolean;  //Adds a device at the port specified and opens the port
+*Function Serial_Relay_Status(Device:String):integer; //Reports the status of all relays on board specified to the console
+*Function Serial_Relay_List:integer; //Lists all relay boards added and their status to the cosole
+*Function Write_Serial_Relay(Device:String;Relay_Number:Byte;State:Boolean):integer;
+*Function Read_Serial_Relay(Device:String;Relay_Number:Byte):Byte;
+*Function Set_Serial_Relays(Device:String):integer;  //Turns on All relays on the board specified
+*Function Set_All_Serial_Relays:integer; //Turns on All relays on All boards
+*Function Clear_Serial_Relays(Device:String):integer; //Turns off All relays on the board specified
+*Function Clear_All_Serial_Relays:integer; //Turns on All relays on All boards
+*Function Serial_Relay_Device_Status(Device:String):Word; //Reports the status of all relays on the board specified in a single word
+*Function Serial_Relay_Device_Status_String(Device:String):String; //Reports the status of all relays on the board specified in a string of 1's and 0's
+*Function Serial_Relay_State(Device:String;Relay_Number:Byte):Boolean; //Reports the status of a specific relay on the board specified as a boolean value
 
 Ports are automatically closed when the program ends
