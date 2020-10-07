@@ -3,13 +3,23 @@ Library to control Serial relays with Free Pascal
 
 This is a library to control Serial Relays that use commands:
 
-*A0 01 01 A2 Open the First Way
-*A0 01 00 A1 Closes the First Way
-*A0 02 01 A2 Opens the Second Way
-*A0 02 00 A1 Closes the Second Way
-*A0 03 01 A2 Opens the 3rd Way
-*A0 03 00 A1 Closes the 3rd Way
-*...
+* A0 01 01 A2 Open the First Way
+* A0 01 00 A1 Closes the First Way
+* A0 02 01 A2 Opens the Second Way
+* A0 02 00 A1 Closes the Second Way
+* A0 03 01 A2 Opens the 3rd Way
+* A0 03 00 A1 Closes the 3rd Way
+* ...
+
+Note that these are all backwards.. it should have been:
+* A0 01 01 A2 Closes the First Relay
+* A0 01 00 A1 Opens the First Relay
+* A0 02 01 A2 Closes the Second Relay
+* A0 02 00 A1 Opens the Second Relay
+* A0 03 01 A2 Closes the Third Relay
+* A0 03 00 A1 Opens the Third Relay
+* ...
+
 
 
 These Relays Control Boards are inexpensive and are made to attach to common relay boards
